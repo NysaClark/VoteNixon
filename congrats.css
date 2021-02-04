@@ -1,0 +1,11 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    cursor: url(images/nixonface.png), pointer;
+}
+
+body{
+    margin: 20px;
+    background-color: #001D4F;
+    color: white;
+}
