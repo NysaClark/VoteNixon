@@ -5,7 +5,19 @@
 }
 
 body{
-    margin: 20px;
+    /* margin: 20px; */
     background-color: #001D4F;
     color: white;
+}
+
+
+
+.content{
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   text-align: center;
 }

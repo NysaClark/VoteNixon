@@ -17,6 +17,24 @@ function fadeIn(el, time) {
     tick();
 }
 
+// let check = 0;
+
+// 4. onclick event: redirect to congrats page
+nixonImg.addEventListener("click",function(){
+    window.location.href = "congrats.html";
+})
+// onclick event: replace image with img 2
+mcGovernImg.addEventListener("click", function(){
+    mcGovernImg.style.display = "none";
+    mcGovernImg2.style.display = "block";
+    fadeIn(document.getElementById('mcGovernImg2'), 1000);
+})
+
+// 5. contextmenu event: redirect to check 1
+mcGovernImg2.addEventListener("contextmenu", function(){
+    window.location.href = "check1.html";
+})
+
 //6. mouseover & mouseleave: add border & cursor on images
 // Nixon image
 nixonImg.addEventListener("mouseover", function(){
@@ -25,7 +43,7 @@ nixonImg.addEventListener("mouseover", function(){
 nixonImg.addEventListener("mouseleave", function(){
     nixonImg.style.border = "none";
 });
-// McGovern image
+// McGovern images
 mcGovernImg.addEventListener("mouseover", function(){
     mcGovernImg.style.border = "3px solid #0E4D82";
     mcGovernImg.style.cursor = "url(images/donkeyCursor.png), pointer";
@@ -33,4 +51,12 @@ mcGovernImg.addEventListener("mouseover", function(){
 mcGovernImg.addEventListener("mouseleave", function(){
     mcGovernImg.style.border = "none";
     mcGovernImg.style.cursor = "url(images/nixonface.png), pointer";
+})
+mcGovernImg2.addEventListener("mouseover", function(){
+    mcGovernImg2.style.border = "3px solid #0E4D82";
+    mcGovernImg2.style.cursor = "url(images/donkeyCursor.png), pointer";
+});
+mcGovernImg2.addEventListener("mouseleave", function(){
+    mcGovernImg2.style.border = "none";
+    mcGovernImg2.style.cursor = "url(images/nixonface.png), pointer";
 })

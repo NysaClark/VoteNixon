@@ -1,0 +1,63 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    cursor: url(images/nixonface.png), pointer;
+}
+
+body{
+    margin: 20px;
+    background-color: #001D4F;
+    color: white;
+}
+
+.header{
+    background-image: url(images/usflagbanner.png);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+    /* font-family: ; */
+}
+
+
+.candidates{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    /* font-family: ; */
+}
+
+img#nixonImg{
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+img#mcGovernImg{
+    height: 400px;
+    margin-bottom: 10px;
+    position:absolute;
+}
+
+.nixon p, .mcGovern p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.mcGovern{
+    text-align: center;
+    width: 300px;
+}
+
+.mcGovern p{
+    text-align: center;
+    margin-top: 410px;
+}
+
+#empty{
+    display: none;
+    height: 400px;
+    margin-bottom: 10px;
+}
